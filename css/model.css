@@ -1,0 +1,65 @@
+.model {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.5);
+}
+
+.model-content{
+    background: #fff;
+    text-align: center;
+    margin: 10% auto;
+    width: 350px;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modelopen;
+    animation-duration: 1s;
+}
+
+.model-content img {
+    width: 185px;
+}
+
+@media(max-width: 722px) {
+    .model-content{
+        margin-top: 25%;
+        width: 330px;
+    }
+    .model-content img {
+        width: 150px;
+    }
+}
+
+@media(max-width: 500px) {
+    .model-content{
+        margin-top: 41%;
+        width: 305px;
+    }
+    .model-content img {
+        width: 119px;
+    }
+}
+
+.model-content h4{
+    margin-bottom: 15px;
+}
+
+.model-content p{
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+@keyframes modelopen{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
